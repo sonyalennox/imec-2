@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assests/styles.css">
+<style>
+.production {
+    float:right;
+    padding-left:25px;
+    padding-right:25px;
+}
+h1 {
+    font-family:'Open Sans', sans-serif;
+    font-size:28px;
+    margin-left:1.88em;
+    margin-top:1.5em
+}
+
+h2 {
+    font-family:'Open Sans', sans-serif;
+    font-size:18px;
+    margin-left:2.88em;
+}
+
+h3 {
+    font-family:'Open Sans', sans-serif;
+    font-size:16px;
+    margin-left:3.25em;
+    margin-right:3.75em;
+}
+
+.regulatory {
+    color:darkorange;
+    font-family:'Open Sans', sans-serif;
+    font-size:18px;
+    margin-left:3em;
+}
+
+.regulatory:hover {
+    color:#004578;
+}
+
+.row > .column {
+  padding: 0 8px;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column {
+  float: left;
+  width: 35%;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: black;
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width: 82%;
+  max-width: 1200px;
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #999;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.caption-container {
+  text-align: center;
+  background-color: black;
+  padding: 2px 16px;
+  color: white;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+img.hover-shadow {
+  transition: 0.01s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.2), 0 8px 22px 0 rgba(0, 0, 0, 0.19);
+}
+</style>
+</head>
+<body>
+    <nav>
+        <label for="drop" class="toggle"><i class="fa fa-align-justify" style="font-size:27px; color:darkorange;"></i></label>
+        <input type="checkbox" id="drop"/>
+            <ul class="menu">
+                <li><a href="index.html"><i class="fa fa-home" style="font-size:26px; color:darkorange;"></i></a></li>
+                <li>
+                <label for="drop-2" class="toggle">Who We Work With</label>
+                <a href="#">Who We Work With <span style="color: darkorange;">&#8681;</span></a>
+                    <ul>
+                        <li><a href="OurClients.html">Our Clients</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="drop-2" class="toggle">Strategic Partners</label>
+                    <a href="#">Strategic Partners<span style="color: darkorange;">&#8681;</span></a>
+                    <ul>
+                        <li><a href="Envent.html">Envent</a></li>
+                        <li><a href="Intergraph.html">Intergraph</a></li>
+                        <li><a href="SeekOps.html">SeekOps</a></li>
+                        <li><a href="fluenta.html">Fluenta</a></li>
+                        <li><a href="ABB.html">ABB</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="drop-2" class="toggle">About Us</label>
+                    <a href="#">About Us <span style="color: darkorange;">&#8681;</span></a>
+                    <ul>
+                        <li><a href="OurTeam.html">Our Team</a></li>
+                        <li><a href="Careers.html">Careers</a></li>
+                        <li><a href="about.html">About iMEC</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+
+    <h1><u>Enhanced Production Audit Program(EPAP)</u></h1>
+    <h2>iMEC Regulatory Compliance Services</h2>
+
+    <img class="production" src="photos/EPAPimage.jpg">
+
+    <h3><p>iMEC is structured to manage your outsourcing requirements from measurement and reporting right through to declaration on a part time of full tiem basis. Through this process we will help you understand the following:</p>
+    <p>
+        <ul>
+            <li>The compliance expectations of your regulator</li>
+            <li>What to consider in designing controls</li>
+            <li>How to evaluate the effectiveness of controls</li>
+            <li>How to maintain controls to ensure their continued effectivness and reporting compliance</li>
+            <li>How to implement EPAP, and use it for continous improvement, year after year</li>
+            <li>How to interpret and use the compliance assessment reports to identify and track issues</li>
+            <li>How to make you annual declaration</li>
+        </ul>
+    </p>
+    </h3>
+
+    <h2>The Purpose of EPAP</h2>
+    <h3><p>EPAP has been implemented through provincial government directives that apply to all operators across Western Canada who are subject to their reporting and measurement requirments. These government directives apply to coventional oil, heavy oil, crude bitumen and natural gas facilities, but not mineable oil sands.</p>
+    <p>Through EPAP, government regulators aim to reduce their reliance on substantive audits in favor of relying on each operator to self-report. A key aspect of EPAP is that each operator is to submit a formal declaration regarding the operating effectiveness of their controls in addressing the risk of noncompliance.</p>
+    </h3>
+
+    <h2>Operator Declaration Requirement</h2>
+    <h3><p>EPAP requires that each operator's senior executives declare annually as to the state of their infrastructure (i.e. controls) ensuring compliance with measurement and reporting requirements. The declaration includes reporting on the existence (or absence) of controls, the extent to which controls have been evaluated, and the degree to which controls have been found to be effective</p>
+    <p>Operators are expected to maintain sufficient documentation to support their design and evaluation of controls. While this documentation does not form part of the annual declaration,it may be requested by the regulator at any time </p></h3>
+
+    <h2>Controls</h2>
+    <h3><p>Well-managed operators will already have controls in place to meet a variety of assurance goals. The regulator encourages operators to leverage relevant existing controls and evaluation procedures for the EPAP purposes and to extend their control structures and environments to cover all measurement and reporting requirements.</p>
+    <p>A core component of EPAP is the reliance placed on the operator's best judgement in determining whether their controls adequately address the risks of noncompliance.</p></h3>
+
+    <h2>Measurement and Reporting Compliance Assessment</h2>
+    <h3>EPAP conducts continuous monitoring of data submitted to the ERCB and provides monthly reports of indicators to all operators. An operator's attention to these indicators is expected to result in continuous improvement in their level of compliance and so help in the management of their operations.</h3>
+
+    <!--Click to view waste stream (GHG) monitoring reporting-->
+
+    <a class="regulatory" href="Regulatory,Safety.html">Click to view waste stream (GHG) monitoring reporting</a>
+
+    <h2 style="font-size:22px;"><u>Viso Drawings</u></h2>
+
+    <div class="row">
+        <div class="column" style="margin-left:5em;">
+          <img src="logo/Measurement Schematic2.jpg" style="width:100%;" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+        <div class="column">
+          <img src="logo/Visio-Measurement Schematic.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+    </div>
+
+      <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+      
+          <div class="mySlides">
+            <img src="logo/Measurement Schematic2.jpg" style="width:100%">
+          </div>
+      
+          <div class="mySlides">
+            <img src="logo/Visio-Measurement Schematic.jpg" style="width:100%">
+          </div>
+          
+          
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      
+          <div class="caption-container">
+            <p id="caption"></p>
+          </div>   
+        </div>
+    </div>
+
+      <script>
+        function openModal() {
+          document.getElementById("myModal").style.display = "block";
+        }
+        
+        function closeModal() {
+          document.getElementById("myModal").style.display = "none";
+        }
+        
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("demo");
+          var captionText = document.getElementById("caption");
+          if (n > slides.length) {slideIndex = 1}
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";
+          dots[slideIndex-1].className += " active";
+          captionText.innerHTML = dots[slideIndex-1].alt;
+        }
+        </script>
+
+
+</body>
+<table class="footer" border="0" cellpadding="50" Frame="void" >
+    <tr class="content">
+        <td class="info" rowspan="3" valign="top" width="175"><u>Contact Us</u>
+            <br>1-888-570-iMEC(4632)<br>admin@imecgrp.com</br></br>
+        </td>
+        <td class="content" rowspan="3" width="175" valign="top"><u>Follow Us</u>
+            <br><a class="imec" href="https://www.linkedin.com/company/imec-corporation"><i class="fa fa-linkedin-square" style="font-size:35px; color:orange;"></i></a></br>
+        </td>
+        <td class="content" rowspan="3" valign="top" width="300"><u>Address</u>
+            <br>150 - 6th Ave. SW, Suite 1500<br>Calgary, Alberta T2P 3Y7</br></br>
+        </td>
+        
+    </tr>
+</table>
+</html>

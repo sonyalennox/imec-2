@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assests/styles.css">
+<style>
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+table {
+	margin-left:20px;
+  margin-bottom:13px;
+  float:right;
+  margin-top:0;
+}
+tr {
+  background:#004578;
+	text-align: center;
+	font-family:'Open Sans', sans-serif;
+  font-size:15px;
+}
+
+.box {
+	color:white;
+	text-decoration: none;
+}
+
+.box:hover {
+	color:lightgrey;
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-size:28px;
+	margin-top:1.5em;
+	margin-left:1em;
+}
+
+h2 {
+	font-family:'Open Sans', sans-serif;
+  font-size:18px;
+	margin-left:1.40em;
+}
+
+h3 {
+	font-family:'Open Sans', sans-serif;
+  font-size:16px;
+	margin-left:1.80em;
+	margin-right:5em;
+}
+.logo {
+    margin-left:8em;
+    margin-bottom:-5px;
+    border:1px solid grey;
+}
+
+iframe {
+	width:600px;
+	height:350px;
+	display:block;
+	margin-right:auto;
+	margin-left:auto;
+    margin-top:40px;
+    color:black;
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 16px;
+  width: 100;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  margin-top:2em;
+  margin-left:0;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.video {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+
+.row .column {
+  box-sizing: border-box;
+}
+
+.row {
+  margin-left:2em;
+  margin-right:2em;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float:left;
+  width: 25%;
+  padding:5px;
+  font-size:14px;
+  font-family:'Open Sans', sans-serif;
+  margin-bottom:20px;
+  margin-top:10px;
+  line-height:1.4285;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    height:auto;
+  }
+}
+
+</style>
+</head>
+<body>
+    <img class="logo"src="logo/imec.png" height="80" width="90"><p style="float:right; margin-right:45em;font-size:16px;">Instrumentation Measurement Environmental Control</p>
+    <nav>
+        <label for="drop" class="toggle"><i class="fa fa-align-justify" style="font-size:27px; color:darkorange;"></i></label>
+        <input type="checkbox" id="drop"/>
+            <ul class="menu">
+                <li><a href="index.html"><i class="fa fa-home" style="font-size:26px; color:darkorange;"></i></a></li>
+                <li>
+                <label for="drop-2" class="toggle">Who We Work With</label>
+                <a href="#">Who We Work With <span style="color: darkorange;">&#8681;</span></a>
+                    <ul>
+                        <li><a href="OurClients.html">Our Clients</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="drop-2" class="toggle">Strategic Partners</label>
+                    <a href="#">Strategic Partners<span style="color: darkorange;">&#8681;</span></a>
+                    <ul>
+                        <li><a href="Envent.html">Envent</a></li>
+                        <li><a href="Intergraph.html">Intergraph</a></li>
+                        <li><a href="SeekOps.html">SeekOps</a></li>
+                        <li><a href="fluenta.html">Fluenta</a></li>
+                        <li><a href="ABB.html">ABB</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="drop-2" class="toggle">About Us</label>
+                    <a href="#">About Us <span style="color: darkorange;">&#8681;</span></a>
+                    <ul>
+                        <li><a href="OurTeam.html">Our Team</a></li>
+                        <li><a href="Careers.html">Careers</a></li>
+                        <li><a href="about.html">About iMEC</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="https://i.picsum.photos/id/1019/690/300.jpg" style="width:100%">
+                <div class="text" align="top"><b>iMEC group of companies</b>- providing accurate, reliable measurement & allocation processes, commissioning and emission management solutions</br><a href="about.html">Learn More</a></div>
+            </div>
+            <div class="mySlides fade">
+              <img src="photos/pipeline.jpg" style="height:300px; width:690px;">
+              <div class="text" style="margin-left:7em;"><b>Providing accurate</b> measurement and allocation processes, emission management solutions & commissioning services</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="photos/imec1.jpg" style="height:300px; width:690px; margin-bottom:-5px;">
+              <div class="text"><b>The Expertise</b> you need, <b>The Value</b> you want</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="https://i.picsum.photos/id/1018/690/300.jpg" style="width:100%">
+              <div class="text"><b>Delivering Value & Results</b><br>To clients in the Oil & Gas, Petrochemical, Power <br> and Transmission industries</br></div>
+            </div>
+            
+        </div>
+            <br>
+            
+            <!--<div style="text-align:left">
+              <span class="dot" onclick="currentSlide(1)"></span> 
+              <span class="dot" onclick="currentSlide(2)"></span> 
+              <span class="dot" onclick="currentSlide(3)"></span> 
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>   
+
+    <Table border="1" cellpadding="5" Frame=void  width="47%" height="25%" valign:top;>
+        <tr>
+            <td><a class="box" href="emissions.html">Environmental & Reporting</a></td>
+            <td><a class="box" href="EnhancedProduction.html">Enhanced Production Audit Program (EPAP)</a></td>
+            <td><a class="box" href="Regulatory,Safety.html">Regulatory & Compliance</a></td>
+            <td><a class="box" href="Instrumentation&Controls.html">Commissioning and Startup</a></td>
+        </tr>
+        <tr>
+            <td><a class="box" href="MeasurementAllocation.html">Measurement & Allocation</a></td>
+            <td><a class="box" href="sampling&analysis.html">Sampling & Analysis</a></td>
+            <td><a class="box" href="maintenance.html">Maintenance Program Development & Management</a></td>
+            <td><a class="box" href="schematics.html">Schematics Development</a></td>
+        </tr>
+    </Table>
+
+<button type="button" class="collapsible"style="margin-left:70em;">Announcements</button>
+<div class="video">
+  <iframe src="" frameborder="0">Video goes here</iframe>
+</div>
+<button type="button" class="collapsible">Links</button>
+<div class="video" style="font-size:18px;margin-left:3em;">
+<a href="https://www.linkedin.com/pulse/managing-our-minds-uncertain-times-michael-gervais/" style="color:darkblue; margin-left:20em;">Managing our minds through these challenging times</a>
+<br>
+<a href="https://boereport.com/" style="color:darkblue; margin-left:20em;">BOE Report - Oil & Gas News</a>
+</div>
+
+<div class="row">
+  <div class="column" style="background-color:#aaa;">
+    <h2>UpStream</h2>
+    <p><b>Oil & Gas</b>- with continuously changing government regulations, its becoming more challenging then ever for Oil and Gas producers to stay compliant. With over 160 years of combined industry experiance in the Oil & Gas Industry, our Senior Consultants have a proven track record to get your operations in order and provide in-depth training programs to help stay that way.</p>
+  </div>
+  <div class="column" style="background-color:#bbb;">
+    <h2>MidStream</h2>
+    <p><b>PetroChemical</b>- The Petrochemicals industries in North America must deal with a variety of environmental issues being addressed by regulators, including emissions of contributors to acid rain, volatile organic compound emissions, generation of green house gases, and odour control. Our Measurement & Environmental team have the experience required to keep you compliant.</p>
+  </div>
+  <div class="column" style="background-color:#ccc;">
+    <h2>DownStream</h2>
+    <p><b>Transmission</b>- iMEC's consultants are some of the most highly recommended in North America, with the expertise to handle the most challenging applications related to analyzers, ultrasonic meters, RTUs, and associated peripheral devices. Audit expertise to regulatory and industry standards, quality control plans and procedures are just the beginning.</p>
+  </div>
+  <div class="column" style="background-color:#ddd;">
+    <h2>Power</h2>
+    <p>Environment Canada's strict guidelines and objectives pertaining to air quality standards includes limits for nitrogen oxides, particulate matter and sulphur dioxixde. The use of stationary combustion turbines, and commercial/industrial boilers offer unique challenges to the Power industry. iMEC's Partnerships help bring it all together so you don't have to.</p>
+  </div>
+</div>
+<br>
+
+    <h1 style="font-size:28px; margin-top:-0.25em;"><u>Our Company</u></h1>
+
+
+    <h2 style="font-size:18px">Delivering Value and Results</h2>
+
+    <h3 style="font-size:16px;"><p>Corporation is a North Amercian based consulting firm that focuses on Oil &Gas, Petro Chemical, Power, Heavy Oil and Transmisssion.</p>
+    <p>Our partners work together to provide services centered around four distinct business sectors - Instrumentation, Measurement, Enviromental and Controls. Technical experts within each group are committed to delivering value within their area of specialty to meet our client's requirements.</p>
+
+    <iframe src="https://www.youtube.com/embed/WTMh2_H1Jps?rel=0" frameborder="0" allowfullscreen="" allow="autoplay; encrypted-media"></iframe>
+
+    <p>The leadership team at iMEC conbined with out Senior Consultants brings over 160 years of combined experience in the Oil & Gas Industry, including a detailed understanding of government regulations.</p>
+    </h3>
+
+    <!--Picture of the office
+    <p align="center">
+    <img class="office" src="https://i.picsum.photos/id/1045/500/300.jpg">
+    <img class="office" src="https://i.picsum.photos/id/1045/500/300.jpg">
+    </p>-->
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+    </script>
+    <script>
+      var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+    </script>
+    
+
+</body>
+<table class="footer" border="0" cellpadding="50" Frame="void" width="100%">
+    <tr class="content">
+        <td class="info" rowspan="3" valign="top" width="175"><u>Contact Us</u>
+            <br>1-888-570-iMEC(4632)<br>admin@imecgrp.com</br></br>
+        </td>
+        <td class="content" rowspan="3" width="175" valign="top"><u>Follow Us</u>
+            <br><a class="imec" href="https://www.linkedin.com/company/imec-corporation"><i class="fa fa-linkedin-square" style="font-size:35px; color:orange;"></i></a></br>
+        </td>
+        <td class="content" rowspan="3" valign="top" width="300"><u>Address</u>
+            <br>150 - 6th Ave. SW <br>Suite 1500<br>Calgary, Alberta T2P 3Y7</br></br></br>
+        </td>   
+    </tr>
+</table>
+</html>

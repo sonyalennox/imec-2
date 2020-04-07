@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assests/styles.css">
+<style>
+h1 {
+    font-family:'Open Sans', sans-serif;
+    font-size:28px;
+    margin-left:1.88em;
+    margin-top:1.5em;
+}
+
+.location {
+  background:#004578;
+  font-family:'Open Sans', sans-serif;
+  font-size:16px;
+  border:2px solid #004578;
+  color:white;
+  float: left;
+  text-align:left;
+  margin-left:3.17em;
+  margin-bottom:2.50em;
+  line-height:30px;
+}
+
+.phone {
+  float:right;
+  margin-right:40px;
+  margin-top:20px;
+  border:2.5px solid grey;
+}
+
+p {
+  font-family:'Open Sans', sans-serif;
+  margin-left:0.28em;
+}
+
+form > input, form > textarea, form > label {
+    display: block;
+    margin-bottom: 5px;
+    width:25em;
+  }
+  
+  form {
+    float:right;
+    margin-right:0.5em;
+    margin-left:2em;
+  }
+  
+  @media screen and (max-width: 600px) {
+    form > input, form > textarea, form > label {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+
+
+</style>
+</head>
+<body>
+    <nav>
+        <label for="drop" class="toggle"><i class="fa fa-align-justify" style="font-size:27px; color:darkorange;"></i></label>
+        <input type="checkbox" id="drop"/>
+            <ul class="menu">
+                <li><a href="index.html"><i class="fa fa-home" style="font-size:26px; color:darkorange;"></i></a></li>
+                <li>
+                <label for="drop-2" class="toggle">Who We Work With</label>
+                <a href="#">Who We Work With <span style="color: darkorange;">&#8681;</span></a>
+                    <ul>
+                        <li><a href="OurClients.html">Our Clients</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="drop-2" class="toggle">Strategic Partners</label>
+                    <a href="#">Strategic Partners<span style="color: darkorange;">&#8681;</span></a>
+                    <ul>
+                        <li><a href="Envent.html">Envent</a></li>
+                        <li><a href="Intergraph.html">Intergraph</a></li>
+                        <li><a href="SeekOps.html">SeekOps</a></li>
+                        <li><a href="fluenta.html">Fluenta</a></li>
+                        <li><a href="ABB.html">ABB</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="drop-2" class="toggle">About Us</label>
+                    <a href="#">About Us <span style="color: darkorange;">&#8681;</span></a>
+                    <ul>
+                        <li><a href="OurTeam.html">Our Team</a></li>
+                        <li><a href="Careers.html">Careers</a></li>
+                        <li><a href="about.html">About iMEC</a></li>
+                    </ul>
+                </li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+    
+    <h1><u>Contact Us</u></h1>
+
+    <form name="contact" method="post" align="right">
+      <label>Name</label>
+      <input type="text" name="name" />
+      <label>Subject</label>
+      <input type="text" name="subject" />
+      <label>Message</label>
+      <textarea name="message" style="height:10em;"></textarea>
+    
+      <input type="submit" name="send" value="Send" style="width:6em; text-align: center;"/>
+
+    </form>
+
+    <div class="location">
+      <p style="margin-top:15px; border-bottom:1.5px solid white"><b><u>iMEC Canada</u></b>
+        <br>+1 403 539 6203<br> 150 - 6th Ave.SW, Suite 5100<br>Calgary, Alberta, Canada<br>T2P 3Y7</p>
+      
+      <p style="border-bottom:1.5px solid white"><b><u>iMEC United States of America</u></b>
+        <br>+1 832 871 5101<br>1300 - 700 Milam Street<br>Houston, Texas, United States<br>77002</p>
+      
+      <p style="border-bottom:1.5px solid white"><b><u>iMEC United Kingdom</u></b>
+        <br>+44 888 570 4632<br>c/-Oury Clark Ltd.<br>10 John Street<br>London, United Kingdom<br>WC1N 2EB</p>
+      
+      <p><b><u>iMEC Mexico</u></b>
+        <br>+52 55 3601 0600<br> Andres Bellos 10<br>Pisos 6 y 7, Torre Forum, Col. Chapultepec<br>Distrito Feral, Mexico City, Mexico<br>11560</p>
+    </div>
+
+    <p align="right">
+      <img class="phone" src="photos/phone.jpg" width="250" height="320" style="margin-right:13em;">
+    </p>
+
+      <script>
+        var form = document.forms["contact"];
+        form.addEventListener('submit',contact_submit,false);
+      
+        function contact_submit(e) {
+          // Stop Form From Submitting
+          e.preventDefault();
+      
+          // Set Initial Variables
+          var target = e.target || e.srcElement;
+          var to = 'sonyalennox@gmail.com';
+          var uri = 'mailto:' + to;
+          var body = '';
+      
+          // Set Form Values to Variables
+          var name = target.elements['name'].value;
+          var subject = target.elements['subject'].value;
+          var message = target.elements['message'].value;
+      
+          // Build final Mailto URI
+          uri += '?subject=' + encodeURIComponent(subject);
+          uri += '&body=' + encodeURIComponent(body);
+      
+          // Open Mailto in New Window / Tab
+          window.open(uri,'_blank');
+        }
+      </script>
+</body>
+<table class="footer" border="0" cellpadding="50" Frame="void" width="100%">
+    <tr class="content">
+        <td class="info" rowspan="3" valign="top" width="175" style="font-size:16px;"><u style="font-size:16px;">Contact Us</u>
+            <br>1-888-570-iMEC(4632)<br>admin@imecgrp.com</br></br>
+        </td>
+        <td class="content" rowspan="3" width="175" valign="top"><u>Follow Us</u>
+            <br><a class="imec" href="https://www.linkedin.com/company/imec-corporation"><i class="fa fa-linkedin-square" style="font-size:35px; color:orange;"></i></a></br>
+        </td>
+        <td class="content" rowspan="3" valign="top" width="300"><u>Address</u>
+            <br>150 - 6th Ave. SW <br>Suite 1500<br>Calgary, Alberta T2P 3Y7</br></br></br>
+        </td>   
+    </tr>
+</table>
+</html>
