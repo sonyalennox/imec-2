@@ -51,9 +51,8 @@ h3 {
 	margin-right:5em;
 }
 .logo {
-    margin-left:8em;
-    margin-bottom:-5px;
-    border:1px solid grey;
+    margin-left:12em;
+    margin-bottom:-9px;
 }
 
 iframe {
@@ -62,8 +61,7 @@ iframe {
 	display:block;
 	margin-right:auto;
 	margin-left:auto;
-    margin-top:40px;
-    color:black;
+	margin-top:40px;
 }
 
 .collapsible {
@@ -127,10 +125,45 @@ iframe {
   }
 }
 
+.row3 .column3 {
+  box-sizing: border-box;
+  margin-top:-40px;
+  text-align:center;
+  color:white;
+}
+
+/* Create four equal columns that floats next to each other */
+.column3 {
+  float:left;
+  width: 25%;
+  padding:5px;
+  font-size:14px;
+  font-family:'Open Sans', sans-serif;
+  margin-bottom:20px;
+  margin-top:-20px;
+  line-height:1.4285;
+  border-left:1px solid darkslategrey
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column3 {
+    width: 100%;
+    height:auto;
+  }
+}
+
 </style>
 </head>
 <body>
-    <img class="logo"src="logo/imec.png" height="80" width="90"><p style="float:right; margin-right:45em;font-size:16px;">Instrumentation Measurement Environmental Control</p>
+    <img class="logo"src="logo/imec.png" height="120" width="150">
     <nav>
         <label for="drop" class="toggle"><i class="fa fa-align-justify" style="font-size:27px; color:darkorange;"></i></label>
         <input type="checkbox" id="drop"/>
@@ -147,11 +180,11 @@ iframe {
                     <label for="drop-2" class="toggle">Strategic Partners</label>
                     <a href="#">Strategic Partners<span style="color: darkorange;">&#8681;</span></a>
                     <ul>
-                        <li><a href="Envent.html">Envent</a></li>
-                        <li><a href="Intergraph.html">Intergraph</a></li>
-                        <li><a href="SeekOps.html">SeekOps</a></li>
-                        <li><a href="fluenta.html">Fluenta</a></li>
-                        <li><a href="ABB.html">ABB</a></li>
+                        <li><a href="partners.html">Envent</a></li>
+                        <li><a href="partners.html">Intergraph</a></li>
+                        <li><a href="partners.html">SeekOps</a></li>
+                        <li><a href="partners.html">Fluenta</a></li>
+                        <li><a href="partners.html.html">ABB</a></li>
                     </ul>
                 </li>
                 <li>
@@ -163,19 +196,15 @@ iframe {
                         <li><a href="about.html">About iMEC</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html">Contact Us</a></li>
+                
                 
             </ul>
         </nav>
         <div class="slideshow-container">
 
             <div class="mySlides fade">
-                <img src="https://i.picsum.photos/id/1019/690/300.jpg" style="width:100%">
-                <div class="text" align="top"><b>iMEC group of companies</b>- providing accurate, reliable measurement & allocation processes, commissioning and emission management solutions</br><a href="about.html">Learn More</a></div>
-            </div>
-            <div class="mySlides fade">
-              <img src="photos/pipeline.jpg" style="height:300px; width:690px;">
-              <div class="text" style="margin-left:7em;"><b>Providing accurate</b> measurement and allocation processes, emission management solutions & commissioning services</div>
+                <img src="photos/landscape.jpg" style="height:300px; width:690px;">
+                <div class="text" align="top"><b>iMEC group of companies</b>- providing accurate, reliable measurement & allocation processes, commissioning and emission management</br><a href="about.html">Learn More</a></div>
             </div>
             
             <div class="mySlides fade">
@@ -184,7 +213,7 @@ iframe {
             </div>
             
             <div class="mySlides fade">
-              <img src="https://i.picsum.photos/id/1018/690/300.jpg" style="width:100%">
+              <img src="photos/pipeline.jpg" style="height:300px; width:690px;">
               <div class="text"><b>Delivering Value & Results</b><br>To clients in the Oil & Gas, Petrochemical, Power <br> and Transmission industries</br></div>
             </div>
             
@@ -211,36 +240,34 @@ iframe {
             <td><a class="box" href="MeasurementAllocation.html">Measurement & Allocation</a></td>
             <td><a class="box" href="sampling&analysis.html">Sampling & Analysis</a></td>
             <td><a class="box" href="maintenance.html">Maintenance Program Development & Management</a></td>
-            <td><a class="box" href="schematics.html">Schematics Development</a></td>
+            <td><a class="box" href="schematics.html">Logistics</a></td>
         </tr>
     </Table>
 
 <button type="button" class="collapsible"style="margin-left:70em;">Announcements</button>
 <div class="video">
-  <iframe src="" frameborder="0">Video goes here</iframe>
+  <p style="font-family:'Open Sans', sans-serif; font-size:18px; margin-left:12em; margin-right:12em;">Watco operates the Terminal del Centro de Mexico in San Luis Potosi, and it recently completed Phase || of construction. That included building three storage tanks totaling 400,000 barrels of capacity.</p><img width="525" height="300" src="photos/watcoimage.jpg" alt="watco image" style="margin-left:18em;">
 </div>
 <button type="button" class="collapsible">Links</button>
 <div class="video" style="font-size:18px;margin-left:3em;">
 <a href="https://www.linkedin.com/pulse/managing-our-minds-uncertain-times-michael-gervais/" style="color:darkblue; margin-left:20em;">Managing our minds through these challenging times</a>
-<br>
-<a href="https://boereport.com/" style="color:darkblue; margin-left:20em;">BOE Report - Oil & Gas News</a>
 </div>
 
 <div class="row">
-  <div class="column" style="background-color:#aaa;">
-    <h2>UpStream</h2>
+  <div class="column" style="background-color:grey;">
+    <h2 style="margin-left:0.5em;">UpStream</h2>
     <p><b>Oil & Gas</b>- with continuously changing government regulations, its becoming more challenging then ever for Oil and Gas producers to stay compliant. With over 160 years of combined industry experiance in the Oil & Gas Industry, our Senior Consultants have a proven track record to get your operations in order and provide in-depth training programs to help stay that way.</p>
   </div>
-  <div class="column" style="background-color:#bbb;">
-    <h2>MidStream</h2>
+  <div class="column" style="background-color:grey;">
+    <h2 style="margin-left:0.5em;">MidStream</h2>
     <p><b>PetroChemical</b>- The Petrochemicals industries in North America must deal with a variety of environmental issues being addressed by regulators, including emissions of contributors to acid rain, volatile organic compound emissions, generation of green house gases, and odour control. Our Measurement & Environmental team have the experience required to keep you compliant.</p>
   </div>
-  <div class="column" style="background-color:#ccc;">
-    <h2>DownStream</h2>
+  <div class="column" style="background-color:grey;">
+    <h2 style="margin-left:0.5em;">DownStream</h2>
     <p><b>Transmission</b>- iMEC's consultants are some of the most highly recommended in North America, with the expertise to handle the most challenging applications related to analyzers, ultrasonic meters, RTUs, and associated peripheral devices. Audit expertise to regulatory and industry standards, quality control plans and procedures are just the beginning.</p>
   </div>
-  <div class="column" style="background-color:#ddd;">
-    <h2>Power</h2>
+  <div class="column" style="background-color:grey;">
+    <h2 style="margin-left:0.5em;">Power</h2>
     <p>Environment Canada's strict guidelines and objectives pertaining to air quality standards includes limits for nitrogen oxides, particulate matter and sulphur dioxixde. The use of stationary combustion turbines, and commercial/industrial boilers offer unique challenges to the Power industry. iMEC's Partnerships help bring it all together so you don't have to.</p>
   </div>
 </div>
@@ -311,18 +338,38 @@ for (i = 0; i < coll.length; i++) {
     </script>
     
 
-</body>
-<table class="footer" border="0" cellpadding="50" Frame="void" width="100%">
-    <tr class="content">
-        <td class="info" rowspan="3" valign="top" width="175"><u>Contact Us</u>
-            <br>1-888-570-iMEC(4632)<br>admin@imecgrp.com</br></br>
-        </td>
-        <td class="content" rowspan="3" width="175" valign="top"><u>Follow Us</u>
-            <br><a class="imec" href="https://www.linkedin.com/company/imec-corporation"><i class="fa fa-linkedin-square" style="font-size:35px; color:orange;"></i></a></br>
-        </td>
-        <td class="content" rowspan="3" valign="top" width="300"><u>Address</u>
-            <br>150 - 6th Ave. SW <br>Suite 1500<br>Calgary, Alberta T2P 3Y7</br></br></br>
-        </td>   
-    </tr>
-</table>
+  </body>
+<div class="row4">
+  <div class="column4" style="background-color:grey;">
+    <h2 style="margin-left:0.5em;"><u>Contact Us</u></h2>
+    <p style="margin-left:0.5em;">1-888-570-iMEC(4632)<br>admin@imecgrp.com</p>
+  </div>
+  <div class="column4" style="background-color:grey;">
+    <h2 style="margin-left:0.5em;">Follow Us</h2>
+    <p style="margin-left:0.5em;"><a class="imec" href="https://www.linkedin.com/company/imec-corporation"><i class="fa fa-linkedin-square" style="font-size:35px; color:orange;"></i></a></p>
+  </div>
+  <div class="column4" style="background-color:grey;">
+    <h2 style="margin-left:0.5em;"><u>Address</u></h2>
+    <p style="margin-left:0.5em;">150 - 6th Ave. SW <br>Suite 1500<br>Calgary, Alberta T2P 3Y7</p>
+  </div>
+</div>
+
+<div class="row3">
+  <div class="column3" style="background-color:grey;"width="300">
+    <h2 style="margin-left:0.25em;">iMEC Canada</h2>
+    <p style="margin-left:0.25em;">+1 403-539-6203<br>150 - 6th Ave.SW, Suite 5100<br>Calgary, Alberta, Canada<br>T2P 3Y7</p>
+  </div>
+  <div class="column3" style="background-color:grey;"width="300">
+    <h2 style="margin-left:0.25em;">iMEC United States of America</h2>
+    <p style="margin-left:0.25em;">+1 832-871-5101<br>1300 - 700 Milam Street<br>Houston, Texas, United States<br>77002</p>
+  </div>
+  <div class="column3" style="background-color:grey;"width="300">
+    <h2 style="margin-left:0.25em;">iMEC United Kingdom</h2>
+    <p style="margin-left:0.25em;">+44 888-570-4632<br>c/-Oury Clark Ltd.<br>10 John Street<br>Londan, United Kingdom WC1N 2EB</p>
+  </div>
+  <div class="column3" style="background-color:grey;"width="300">
+    <h2 style="margin-left:0.25em;">iMEC Mexico</h2>
+    <p style="margin-left:0.25em;">+52 55-3601-0600<br>Andres Bello 10<br>Pisos 6 y 7, Torre Forum, Col. Chapultepec<br>Distrito Feral, Mexico City, Mexico 11560</p>
+  </div>
+</div>
 </html>

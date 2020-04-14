@@ -17,6 +17,19 @@ h1 {
 	margin-left:1em;
 }
 
+h2 {
+        font-family:'Open Sans', sans-serif;
+        font-size:18px;
+        margin-left:2.60em;
+}
+
+h3 {
+        font-family:'Open Sans', sans-serif;
+        font-size:16px;
+        margin-left:3.5em;
+        margin-right:3.75em;
+}
+
 .detection {
     float:right;
     padding-left:25px;
@@ -26,6 +39,41 @@ h1 {
     margin-bottom:3em;
 }
 
+
+.row3 .column3 {
+  box-sizing: border-box;
+  margin-top:-40px;
+  text-align:center;
+  color:white;
+}
+
+/* Create four equal columns that floats next to each other */
+.column3 {
+  float:left;
+  width: 25%;
+  padding:5px;
+  font-size:14px;
+  font-family:'Open Sans', sans-serif;
+  margin-bottom:20px;
+  margin-top:-20px;
+  line-height:1.4285;
+  border-left:1px solid darkslategrey;
+}
+
+/* Clear floats after the columns */
+.row3:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column3 {
+    width: 100%;
+    height:auto;
+  }
+}
 </style>
 </head>
 <body>
@@ -45,11 +93,11 @@ h1 {
                     <label for="drop-2" class="toggle">Strategic Partners</label>
                     <a href="#">Strategic Partners<span style="color: darkorange;">&#8681;</span></a>
                     <ul>
-                        <li><a href="Envent.html">Envent</a></li>
-                        <li><a href="Intergraph.html">Intergraph</a></li>
-                        <li><a href="SeekOps.html">SeekOps</a></li>
-                        <li><a href="fluenta.html">Fluenta</a></li>
-                        <li><a href="ABB.html">ABB</a></li>
+                        <li><a href="partners.html">Envent</a></li>
+                        <li><a href="partners.html">Intergraph</a></li>
+                        <li><a href="partners.html">SeekOps</a></li>
+                        <li><a href="partners.html">Fluenta</a></li>
+                        <li><a href="partners.html">ABB</a></li>
                     </ul>
                 </li>
                 <li>
@@ -61,7 +109,6 @@ h1 {
                         <li><a href="about.html">About iMEC</a></li>
                     </ul>
                 </li>
-                <li><a href="contact.html">Contact Us</a></li>
                 
             </ul>
         </nav> 
@@ -69,18 +116,64 @@ h1 {
 
 <img class="detection" src="photos/IMEC4.jpg">
 
+<h2>Our Solutions</h2>
+    <h3>Our experienced team can assist your organization in the form of emissions testing, leak detection, analysis and reporting to meet expanding regulatory requirments, including air pollutant and methane emissions regulations. Our team can ensure you get the most out of you equipment, while helping you with your compliance efforts. What can we offer?</h3>
+
+    <h2>Testing</h2>
+    <h3>If you need compressor stack or station leak testing, we can help. We have experience measuring and reducing emissions of nitrous oxides, methane and  othe emissions both to meet regulatory requirements and to continually improve performance. Our team of operators, mechanics and engineers can determine what's required and complete your emission testing, preventing you from purchasing unnecessary equipment and allowing yo to keep focused on your key operations. </h3>
+
+    <h2>Analysis</h2>
+    <h3>Our experts will analyze emission test results and asset operations to determine the most cost-effective solution to help your organization comple wiht regulatory requirements. For example, our team can easily summarize results across you asset fleet and provide a summary of recommended improvements ranked by cost or ease of implementation.</h3>
+
+    <h2>Reporting</h2>
+    <h3>Not familiar with emissions testing requirements or reporting systems? Our experts can easily educate and train you and your team on the important need-to-know items. We can also help you complete required reporting through online systems.</h3>
+
+    <h2>Maintenance & Support</h2>
+    <h3>We can assist your organization with the servicing required to support any improvements you might need. For example, our compressor stack and station leak testing services can easily be completed in conjunction with below-ground leak surveys, valve insoections and more</h3>
+
+    <!--Put Fugitive Emission Leak Detection video here-->
+
+
+    <iframe src="https://www.youtube.com/embed/bEXSWWWpQVg" frameborder="0" allowfullscreen="" allow="accelerometer;autoplay;encrypted-media;gyroscope;picture-in-picture"></iframe>
+
+
+    <!--Put Read about our partner, SeekOps Link Here-->
+
+    <h3>Read about <a class="SeekOps" href="SeekOps.html">our partner, SeekOps</a>
+
+
 </body>
-<table class="footer" border="0" cellpadding="50" Frame="void" width="100%">
-    <tr class="content">
-        <td class="info" rowspan="3" valign="top" width="175"><u>Contact Us</u>
-            <br>1-888-570-iMEC(4632)<br>admin@imecgrp.com</br></br>
-        </td>
-        <td class="content" rowspan="3" width="175" valign="top"><u>Follow Us</u>
-            <br><a class="imec" href="https://www.linkedin.com/company/imec-corporation"><i class="fa fa-linkedin-square" style="font-size:35px; color:orange;"></i></a></br>
-        </td>
-        <td class="content" rowspan="3" valign="top" width="300"><u>Address</u>
-            <br>150 - 6th Ave. SW <br>Suite 1500<br>Calgary, Alberta T2P 3Y7</br></br></br>
-        </td>   
-    </tr>
-</table>
+<div class="row4">
+    <div class="column4" style="background-color:grey;">
+      <h2 style="margin-left:0.5em;"><u>Contact Us</u></h2>
+      <p style="margin-left:0.5em;">1-888-570-iMEC(4632)<br>admin@imecgrp.com</p>
+    </div>
+    <div class="column4" style="background-color:grey;">
+      <h2 style="margin-left:0.5em;">Follow Us</h2>
+      <p style="margin-left:0.5em;"><a class="imec" href="https://www.linkedin.com/company/imec-corporation"><i class="fa fa-linkedin-square" style="font-size:35px; color:orange;"></i></a></p>
+    </div>
+    <div class="column4" style="background-color:grey;">
+      <h2 style="margin-left:0.5em;"><u>Address</u></h2>
+      <p style="margin-left:0.5em;">150 - 6th Ave. SW <br>Suite 1500<br>Calgary, Alberta T2P 3Y7</p>
+    </div>
+  </div>
+  
+  <div class="row3">
+    <div class="column3" style="background-color:grey;"width="300">
+      <h2 style="margin-left:0.25em;">iMEC Canada</h2>
+      <p style="margin-left:0.25em;">+1 403-539-6203<br>150 - 6th Ave.SW, Suite 5100<br>Calgary, Alberta, Canada<br>T2P 3Y7</p>
+    </div>
+    <div class="column3" style="background-color:grey;"width="300">
+      <h2 style="margin-left:0.25em;">iMEC United States of America</h2>
+      <p style="margin-left:0.25em;">+1 832-871-5101<br>1300 - 700 Milam Street<br>Houston, Texas, United States<br>77002</p>
+    </div>
+    <div class="column3" style="background-color:grey;"width="300">
+      <h2 style="margin-left:0.25em;">iMEC United Kingdom</h2>
+      <p style="margin-left:0.25em;">+44 888-570-4632<br>c/-Oury Clark Ltd.<br>10 John Street<br>Londan, United Kingdom WC1N 2EB</p>
+    </div>
+    <div class="column3" style="background-color:grey;"width="300">
+      <h2 style="margin-left:0.25em;">iMEC Mexico</h2>
+      <p style="margin-left:0.25em;">+52 55-3601-0600<br>Andres Bello 10<br>Pisos 6 y 7, Torre Forum, Col. Chapultepec<br>Distrito Feral, Mexico City, Mexico 11560</p>
+    </div>
+  </div>
 </html>
