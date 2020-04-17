@@ -60,37 +60,14 @@ iframe {
 	width:600px;
 	height:350px;
 	display:block;
-	margin-right:auto;
-	margin-left:auto;
 	margin-top:40px;
-}
-
-.column6 .row6 {
-  box-sizing: border-box;
-}
-
-
-/* Create two equal columns that floats next to each other */
-.column6 {
-  float: left;
-  width: 100%;
-  text-align:center;
-  height: 20%; /* Should be removed. Only for demonstration */
-  border:1px solid darkgrey;
-  margin-top:5px;
-}
-
-/* Clear floats after the columns */
-.row6:after {
-  content: "";
-  display: table;
-  clear: both;
 }
 
 
 /*Industry segments*/
 .row .column {
   box-sizing: border-box;
+  height:415px;
 }
 
 .row {
@@ -102,12 +79,14 @@ iframe {
 .column {
   float:right;
   width: 25%;
+  color:white;
   padding:5px;
   font-size:14px;
   font-family:'Open Sans', sans-serif;
   margin-bottom:20px;
   margin-top:10px;
-  line-height:1.4285;
+  line-height:1.25;
+  text-align:left;
 }
 
 /* Clear floats after the columns */
@@ -158,6 +137,28 @@ iframe {
     width: 100%;
     height:auto;
   }
+}
+
+#more {
+  display: none;
+  padding-left:20px;
+}
+
+.read {
+  margin-top:50px;
+  margin-bottom:auto;
+}
+
+#myBtn {
+  background-color:grey; 
+  color:darkorange; 
+  border:-0.75 solid black; 
+  height:23px; 
+  border-radius:6px 6px 6px 6px;
+}
+#myBtn:hover {
+  color:blue; 
+  background-color:lightgrey;
 }
 
 </style>
@@ -247,28 +248,44 @@ iframe {
     </Table>
 
 
-<div class="row6">
-  <div class="column6">
-    <h2>Announcements</h2>
-    <p style="font-family:'Open Sans',sans-serif; font-size:16px; margin-left:5em; margin-right:5em; float:left;">Watco operates the Terminal del Centro de Mexico sin San Luis Potosi, and it recently completed Phase || of construction. That included building three storage tanks totaling 400,000 barrels of capacity.</p><img width="425" height="230" src="photos/watcoimage.jpg" alt="watco image">
-  </div>
-</div>
-
-
 
 <br>
 
-    <h1 style="font-size:28px; margin-top:-0.25em;"><u>Our Company</u></h1>
+<div class="row" align="center">
+  <div class="column" style="background-color:grey;">
+    <h2 style="margin-left:0.5em;">Power Generation</h2>
+    <p>As the power generation industry becomes more efficient so does your plant. You need consistent and reliable energy in an already heavily regulated market. Commissioning a power generation facility after intense inspection is critical to its life cycle from which performance, availability and maintenance is dependent.  Good facility design, proper choice of equipment and project execution are all basic aspects for any new industrial installation to achieve the production values expected. Between the design, construction and full operation of the plant, there is a process which will mark the installation’s lifespan. iMEC’s experienced commissioning team can help.</p>
+  </div>
+  <div class="column" style="background-color:grey;">
+    <h2 style="margin-left:0.5em;">Petro Chemical / LNG</h2>
+    <p>Together with our strategic partners, iMEC provides products, solutions and services that enhance the productivity and energy efficiency of a broad range of chemical processes, from the smallest batch plant to the largest continuous petrochemical complex.</p>
+  </div> 
+  <div class="column" style="background-color:grey;">
+    <h2 style="margin-left:0.5em;">Oil & Gas</h2>
+    <p>Accurate, reliable measurement and allocation processes are fundamental to all aspects of a successful oil and gas business, from reservoir modelling and management to interfacing with third parties and meeting fiscal and reporting obligations. iMEC has deep experience in Gain/Loss and Lost-and-Unaccounted-For (LUF) investigations, from balanced segments to transport induced errors (via SCADA or other data collection systems) to installation effects and procedural missteps. In conjunction with your company’s field operations staff, iMEC can ensure that your organization is compliant with local government regulations.</p>
+  </div>
+  <div class="column" style="background-color:grey;">
+    <h2 style="margin-left:0.5em;">Transmission</h2>
+    <p>iMEC's consultants are some of the most highly recommended in North America, with the expertise to handle the most challenging applications related to analyzers, meters, RTUs, and associated peripheral devices. Audit assessments to regulatory and industry standards, quality control plans and procedures are just the beginning.  iMEC's commissioning team was awarded three turbochargers for TC Energy in the country of Mexico that together exceed 135,000 horsepower as well as the Altamira V measuring station of the Southern De Texas – Tuxpan gas pipeline. Our team consisting of mechanical, electrical, instrumentation, automation and measurement expertise utilized Hexagon’s Smart Completions software (formerly IBS Continuum Edge) to manage the commissioning and improve efficiencies by as much as 20%.</p>
+  </div>
+</div>
 
+    <h1 style="font-size:28px; margin-top:-0.25em;"><u>Our Company</u></h1>
 
     <h2 style="font-size:18px">Delivering Value and Results</h2>
 
-    <h3 style="font-size:16px;"><p>Corporation is a North Amercian based consulting firm that focuses on Oil &Gas, Petro Chemical, Power, Heavy Oil and Transmisssion.</p>
+    <h3 style="font-size:16px;"><p>Corporation is a North Amercian based consulting firm that focuses on Oil & Gas, Petro Chemical, Power, Heavy Oil and Transmisssion.</p>
     <p>Our partners work together to provide services centered around four distinct business sectors - Instrumentation, Measurement, Enviromental and Controls. Technical experts within each group are committed to delivering value within their area of specialty to meet our client's requirements.</p>
 
-    <iframe src="https://www.youtube.com/embed/WTMh2_H1Jps?rel=0" frameborder="0" allowfullscreen="" allow="autoplay; encrypted-media"></iframe>
+    <iframe align="left" src="https://www.youtube.com/embed/WTMh2_H1Jps?rel=0" frameborder="0" allowfullscreen="" allow="autoplay; encrypted-media"></iframe>
 
-    <p>The leadership team at iMEC conbined with out Senior Consultants brings over 160 years of combined experience in the Oil & Gas Industry, including a detailed understanding of government regulations.</p>
+    <div class="read" align="center" style="padding-bottom:20px;">
+    <h2 style="margin-left:0em;">Announcements</h2>
+    <p style="font-family:'Open Sans', sans-serif; font-size:16px;">iMEC's first refined products transloading facility in<span id="dots">..</span><span id="more">Mexico was a huge success. Thank you Watco for allowing our team this great opportunity to complete the commissioning services.<img align="left" style="padding-left:20px;"width="425" height="230" src="photos/watcoimage.jpg" alt="watco image"></span></p>
+    <button onclick="myFunction()" id="myBtn">Read more</button>
+    </div>
+
+    <p style="margin-top:13em;" align="left">The leadership team at iMEC conbined with out Senior Consultants brings over 160 years of combined experience in the Oil & Gas Industry, including a detailed understanding of government regulations.</p>
     </h3>
 
     <!--Picture of the office
@@ -314,25 +331,25 @@ for (i = 0; i < coll.length; i++) {
   });
 }
     </script>
+    <script>
+function myFunction() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less"; 
+    moreText.style.display = "inline";
+  }
+}
+    </script>
     
-    <div class="row">
-      <div class="column" style="background-color:darkgrey;">
-        <h2 style="margin-left:0.5em;">UpStream</h2>
-        <p><b>Oil & Gas</b>- with continuously changing government regulations, its becoming more challenging then ever for Oil and Gas producers to stay compliant. With over 160 years of combined industry experiance in the Oil & Gas Industry, our Senior Consultants have a proven track record to get your operations in order and provide in-depth training programs to help stay that way.</p>
-      </div>
-      <div class="column" style="background-color:darkgrey;">
-        <h2 style="margin-left:0.5em;">MidStream</h2>
-        <p><b>PetroChemical</b>- The Petrochemicals industries in North America must deal with a variety of environmental issues being addressed by regulators, including emissions of contributors to acid rain, volatile organic compound emissions, generation of green house gases, and odour control. Our Measurement & Environmental team have the experience required to keep you compliant.</p>
-      </div> 
-      <div class="column" style="background-color:darkgrey;">
-        <h2 style="margin-left:0.5em;">DownStream</h2>
-        <p><b>Transmission</b>- iMEC's consultants are some of the most highly recommended in North America, with the expertise to handle the most challenging applications related to analyzers, ultrasonic meters, RTUs, and associated peripheral devices. Audit expertise to regulatory and industry standards, quality control plans and procedures are just the beginning.</p>
-      </div>
-      <div class="column" style="background-color:darkgrey;">
-        <h2 style="margin-left:0.5em;">Power</h2>
-        <p>Environment Canada's strict guidelines and objectives pertaining to air quality standards includes limits for nitrogen oxides, particulate matter and sulphur dioxixde. The use of stationary combustion turbines, and commercial/industrial boilers offer unique challenges to the Power industry. iMEC's Partnerships help bring it all together so you don't have to.</p>
-      </div>
-    </div>
+  
   </body>
 <div class="row4">
   <div class="column4" style="background-color:grey;">
